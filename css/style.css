@@ -1,0 +1,10 @@
+body {
+  min-width: 320px;
+  font-size: 14px;
+  color: darksalmon;
+}
+
+.navbar-brad img {
+  max-width: 100%;
+  height: auto;
+}
