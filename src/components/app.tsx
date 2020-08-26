@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 
 import GameCarousel from "./carousel";
 
+import Header from "./header";
+
 export default function App() {
   const [games, setGames] = React.useState([]);
   React.useEffect(function () {
@@ -15,7 +17,8 @@ export default function App() {
   });
   const zashcvarGames = games.filter((game: any) => game.rating >= 90);
   return (
-    <Container>
+    <Container fluid>
+      <Header />
       <GameCarousel games={zashcvarGames} />
     </Container>
   );
