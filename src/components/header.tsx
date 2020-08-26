@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/esm/Nav";
 
 import Collapse from "react-bootstrap/esm/Collapse";
 
-export default class header extends Component {
+export default class Header extends Component {
   render() {
     return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
