@@ -13,11 +13,9 @@ export default function App() {
         .then((json) => setGames(json));
     }
   });
-  const zashcvarGames = games.filter((game: any) => game.category_id === 103);
+  const zashcvarGames = games.filter((game: any) => game.rating >= 90);
   return (
     <Container>
-      <GameCarousel games={games} />
-
       <GameCarousel games={zashcvarGames} />
     </Container>
   );
