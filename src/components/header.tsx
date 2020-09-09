@@ -12,7 +12,7 @@ export default class Header extends Component {
         <Container>
           <Navbar.Brand href="/">
             <img
-              src="/img.jpg"
+              src="./img.jpg"
               height="30"
               width="30"
               className="d-inline-block align-top"
@@ -31,5 +31,17 @@ export default class Header extends Component {
         </Container>
       </Navbar>
     );
+
+    /*     <Router>
+        <Switch>
+          <Route>
+
+          </Route>
+
+        </Switch>
+               
+
+      </Router>
+ */
   }
 }

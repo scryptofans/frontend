@@ -14,7 +14,7 @@ export default function GameCarousel(props: IProps) {
     <Carousel>
       {props.games.map(function (game: any) {
         return (
-          <Carousel.Item>
+          <Carousel.Item key={game.id}>
             <img className="d-block w-100" src={game.image} alt={game.name} />
             <Carousel.Caption>
               <h3>{game.name}</h3>
