@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Container from "react-bootstrap/Container";
 
 import GameCarousel from "./carousel";
@@ -19,6 +21,9 @@ export default function App() {
   return (
     <Container fluid>
       <Header />
+      <div>
+        <h1>Популярные игры</h1>
+      </div>
       <GameCarousel games={zashcvarGames} />
     </Container>
   );

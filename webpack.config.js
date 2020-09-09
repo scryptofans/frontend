@@ -3,13 +3,18 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const htmlPlugin = new HtmlWebpackPlugin({
   title: "Output Management",
-  template: "public/index.html",
+  template: path.resolve("public/index.html"),
 });
 
 const tsRule = {
   test: /\.tsx?$/,
   use: "ts-loader",
   exclude: /node_modules/,
+};
+
+const cssRule = {
+  test: /\.css$/,
+  use: ["style-loader", "css-loader"],
 };
 
 module.exports = {
@@ -19,7 +24,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
   },
   module: {
-    rules: [tsRule],
+    rules: [tsRule, cssRule],
   },
   devServer: {
     contentBase: path.join(__dirname, "public"),
