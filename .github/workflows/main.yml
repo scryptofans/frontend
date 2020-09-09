@@ -36,8 +36,6 @@ jobs:
         # uses: peaceiris/actions-github-pages@b80a30e9bf3c1ec596532c3813f0aff094f555e2
         uses: peaceiris/actions-github-pages@v3.1.12
         with:
-        
-          github_token: ${{ secrets.TOKEN }}
-          
+          personal_token: ${{ secrets.TOKEN }}
           publish_dir: ./dist
   
