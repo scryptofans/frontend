@@ -12,7 +12,7 @@ export default function App() {
   const [games, setGames] = React.useState([]);
   React.useEffect(function () {
     if (games.length === 0) {
-      fetch("/games.json")
+      fetch("./games.json")
         .then((resp) => resp.json())
         .then((json) => setGames(json));
     }
