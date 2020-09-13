@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/scryptofans/frontend#readme",
   "devDependencies": {
+    "@types/react-router-dom": "^5.1.5",
     "css-loader": "^4.3.0",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
@@ -37,7 +38,8 @@
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "husky": {
     "hooks": {
